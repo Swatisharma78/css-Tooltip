@@ -1,0 +1,123 @@
+.container{
+  display: flex;
+  width: 80%;    
+  margin: auto;
+  margin-top: 200px;
+}
+.container>div{    
+    margin: auto;
+}
+.left {
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+    position: relative;
+    display: inline-block;
+    background-color: teal;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+  }
+  
+  .left .lefttext {
+    border-radius: 6px;
+    padding: 5px 0;  
+    position: absolute;
+    z-index: 1;   
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    right: 110%;
+  }
+  
+  .left:hover .lefttext {
+    visibility: visible;
+  }
+  .right {
+    display: inline-block;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    position: relative;
+    border-radius: 10px;
+    font-size: 30px;
+  }
+  
+  .right .righttext {
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0; 
+    visibility: hidden;
+    width: 120px;
+    background-color: black;  
+    position: absolute;
+    z-index: 1;
+    left: 105%;
+  }
+  
+  .right:hover .righttext {
+    visibility: visible;
+  }
+
+  .top {
+    display: inline-block;
+    background-color: teal;
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+  }
+  
+  .top .toptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;   
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .top:hover .toptext {
+    visibility: visible;
+  }
+  .bottom {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    background-color: teal;
+    color: white;
+    border-bottom: 1px dotted black;
+  }
+  
+  .bottom .bottomtext {
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;   
+    position: absolute;
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .bottom:hover .bottomtext {
+    visibility: visible;
+  }
+  
